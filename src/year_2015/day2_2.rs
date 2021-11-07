@@ -1,5 +1,5 @@
 // Day 2: I Was Told There Would Be No Math
-// Problem 2
+// Problem 1
 
 pub fn solve(input: &str) -> i32 {
     let mut sum: i32 = 0;
@@ -19,14 +19,10 @@ pub fn solve(input: &str) -> i32 {
         let width: i32 = s[1].parse::<i32>().unwrap();
         let height: i32 = s[2].parse::<i32>().unwrap();
 
-        // Make a vector of the dimensions
-        let sides = vec![length*width, width*height, height*length];
+        let mut sides = vec![length, width, height];
+        sides.sort();
 
-        // Find minimum side
-        let min_value = sides.iter().min().expect("Could not find a minimum value");
-
-        // Sum the dimensions
-        sum += 2 * length * width + 2 * width * height + 2 * height * length + min_value;
+        sum += 2*sides[0] + 2*sides[1] + sides[0]*sides[1]*sides[2];
     }
     sum
 }

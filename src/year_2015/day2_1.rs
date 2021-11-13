@@ -1,5 +1,5 @@
 // Day 2: I Was Told There Would Be No Math
-// Problem 2
+// Problem 1
 
 pub fn solve(input: &str) -> i32 {
     let mut sum: i32 = 0;

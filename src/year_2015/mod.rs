@@ -1,21 +1,21 @@
-pub mod day1_1;
-pub mod day1_2;
-pub mod day2_1;
-pub mod day2_2;
-pub mod day3_1;
-pub mod day3_2;
-pub mod day4_1;
-pub mod day4_2;
-pub mod day5_1;
-// pub mod day5_2;
-// pub mod day6_1;
-// pub mod day6_2;
-// pub mod day7_1;
-// pub mod day7_2;
-// pub mod day8_1;
-// pub mod day8_2;
-// pub mod day9_1;
-// pub mod day9_2;
+pub mod day01_1;
+pub mod day01_2;
+pub mod day02_1;
+pub mod day02_2;
+pub mod day03_1;
+pub mod day03_2;
+pub mod day04_1;
+pub mod day04_2;
+pub mod day05_1;
+pub mod day05_2;
+// pub mod day_06_1;
+// pub mod day_06_2;
+// pub mod day_07_1;
+// pub mod day_07_2;
+// pub mod day_08_1;
+// pub mod day_08_2;
+// pub mod day_09_1;
+// pub mod day_09_2;
 // pub mod day10_1;
 // pub mod day10_2;
 // pub mod day11_1;
@@ -51,16 +51,16 @@ pub mod day5_1;
 
 pub fn print_answer(day: u32, problem: u32, input: String) {
     match (day, problem) {
-        (1, 1) => println!("{}", day1_1::solve(&input)),
-        (1, 2) => println!("{}", day1_2::solve(&input)),
-        (2, 1) => println!("{}", day2_1::solve(&input)),
-        (2, 2) => println!("{}", day2_2::solve(&input)),
-        (3, 1) => println!("{}", day3_1::solve(&input)),
-        (3, 2) => println!("{}", day3_2::solve(&input)),
-        (4, 1) => println!("{}", day4_1::solve(&input)),
-        (4, 2) => println!("{}", day4_2::solve(&input)),
-        (5, 1) => println!("{}", day5_1::solve(&input)),
-        // (5, 2) => println!("{}", day5_2::solve(&input)),
+        (1, 1) => println!("{}", day01_1::solve(&input)),
+        (1, 2) => println!("{}", day01_2::solve(&input)),
+        (2, 1) => println!("{}", day02_1::solve(&input)),
+        (2, 2) => println!("{}", day02_2::solve(&input)),
+        (3, 1) => println!("{}", day03_1::solve(&input)),
+        (3, 2) => println!("{}", day03_2::solve(&input)),
+        (4, 1) => println!("{}", day04_1::solve(&input)),
+        (4, 2) => println!("{}", day04_2::solve(&input)),
+        (5, 1) => println!("{}", day05_1::solve(&input)),
+        (5, 2) => println!("{}", day05_2::solve(&input)),
         // (6, 1) => println!("{}", day6_1::solve(&input)),
         // (6, 2) => println!("{}", day6_2::solve(&input)),
         // (7, 1) => println!("{}", day7_1::solve(&input)),

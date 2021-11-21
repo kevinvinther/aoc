@@ -9,7 +9,7 @@ pub mod day04_2;
 pub mod day05_1;
 pub mod day05_2;
 pub mod day06_1;
-// pub mod day06_2;
+pub mod day06_2;
 // pub mod day07_1;
 // pub mod day07_2;
 // pub mod day08_1;
@@ -62,7 +62,7 @@ pub fn print_answer(day: u32, problem: u32, input: String) {
         (5, 1) => println!("{}", day05_1::solve(&input)),
         (5, 2) => println!("{}", day05_2::solve(&input)),
         (6, 1) => println!("{}", day06_1::solve(&input)),
-        // (6, 2) => println!("{}", day06_2::solve(&input)),
+        (6, 2) => println!("{}", day06_2::solve(&input)),
         // (7, 1) => println!("{}", day07_1::solve(&input)),
         // (7, 2) => println!("{}", day07_2::solve(&input)),
         // (8, 1) => println!("{}", day08_1::solve(&input)),
